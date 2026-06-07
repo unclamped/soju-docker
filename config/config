@@ -6,4 +6,4 @@ db sqlite3 /var/lib/soju/main.db
 #   tls /etc/soju/cert.pem /etc/soju/key.pem
 listen irc://localhost
 
-listen unix+admin://
+listen unix+admin:///var/lib/soju/admin.sock
