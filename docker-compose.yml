@@ -1,0 +1,14 @@
+services:
+  soju:
+    image: ghcr.io/unclamped/soju-docker:latest
+    container_name: soju
+    restart: unless-stopped
+    volumes:
+      - soju-data:/var/lib/soju
+      - ./config:/etc/soju
+    ports:
+      - "6667:6667"
+      - "6697:6697"
+
+volumes:
+  soju-data:
