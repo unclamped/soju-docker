@@ -4,6 +4,6 @@ db sqlite3 /var/lib/soju/main.db
 # To use TLS directly instead, replace with:
 #   listen ircs://
 #   tls /etc/soju/cert.pem /etc/soju/key.pem
-listen irc://
+listen irc://localhost
 
 listen unix+admin://
