@@ -6,6 +6,8 @@ services:
     volumes:
       - soju-data:/var/lib/soju
       - ./config:/etc/soju
+    cap_add:
+      - NET_BIND_SERVICE
     ports:
       - "6667:6667"
       - "6697:6697"
